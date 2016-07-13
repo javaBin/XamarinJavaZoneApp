@@ -1,0 +1,40 @@
+html {
+    -webkit-text-size-adjust: none; /* Never autoresize text */
+}
+body {
+  font-family: Helvetica;
+}
+p {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+ul {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+li {
+  font-size: 13px;
+  list-style-position: inside;
+}
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+p img {
+  margin-right: 5px;
+}
+a {
+  color: #ff8641;
+  text-decoration: none;
+}

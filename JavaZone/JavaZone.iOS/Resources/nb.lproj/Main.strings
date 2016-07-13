@@ -1,0 +1,27 @@
+/* Class = "UISearchBar"; placeholder = "Search by session title or speaker name"; ObjectID = "Do0-h2-Su0"; */
+"Do0-h2-Su0.placeholder" = "Søk på tittel eller foredragsholder";
+
+/* Class = "UIBarButtonItem"; title = "Filter"; ObjectID = "Ji7-4n-uCE"; */
+"Ji7-4n-uCE.title" = "Filter";
+
+/* Class = "UILabel"; text = "No session selected"; ObjectID = "Jwe-yx-PvX"; */
+"Jwe-yx-PvX.text" = "Ingen sesjon valgt";
+
+/* Class = "UIBarButtonItem"; title = "Now"; ObjectID = "NpK-ch-5Qd"; */
+"NpK-ch-5Qd.title" = "Nå";
+
+/* Class = "UILabel"; text = "Testing layout with title that is more than two lines. Testing layout with title that is more than two lines."; ObjectID = "Pye-ep-KZc"; */
+"Pye-ep-KZc.text" = "Testing med tittel som er lengre enn to linjer.";
+
+/* Class = "UILabel"; text = "Lightning"; ObjectID = "h6v-pd-nMw"; */
+"h6v-pd-nMw.text" = "Lyntale";
+
+/* Class = "UILabel"; text = "Room 1"; ObjectID = "hYZ-5B-fa6"; */
+"hYZ-5B-fa6.text" = "Rom 1";
+
+/* Class = "UISegmentedControl"; xIm-NT-rXZ.segmentTitles[0] = "All"; ObjectID = "xIm-NT-rXZ"; */
+"xIm-NT-rXZ.segmentTitles[0]" = "Alle";
+
+/* Class = "UISegmentedControl"; xIm-NT-rXZ.segmentTitles[1] = "Favourites"; ObjectID = "xIm-NT-rXZ"; */
+"xIm-NT-rXZ.segmentTitles[1]" = "Favoritter";
+

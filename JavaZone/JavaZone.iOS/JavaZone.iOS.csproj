@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{2F2D4B51-6F35-4C71-9A92-4E840016D6F0}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JavaZone.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>JavaZoneiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <BundleResource Include="Resources\en.lproj\InfoPlist.strings" />
+    <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+    <InterfaceDefinition Include="Detail.storyboard" />
+    <InterfaceDefinition Include="EMS\Main.storyboard" />
+    <InterfaceDefinition Include="EMS\Filter.storyboard" />
+    <InterfaceDefinition Include="EMS\Settings.storyboard" />
+    <InterfaceDefinition Include="EMS\Launch Screen.storyboard" />
+    <InterfaceDefinition Include="EMS\Detail.storyboard" />
+    <None Include="Graphic Assets\JZIcon.ai" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <BundleResource Include="Resources\nb.lproj\InfoPlist.strings" />
+    <BundleResource Include="Resources\nb.lproj\Localizable.strings" />
+    <InterfaceDefinition Include="Launch Screen.storyboard" />
+    <InterfaceDefinition Include="Settings.storyboard" />
+    <BundleResource Include="Resources\Buttons\02-arrow-east.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\03-arrow-north.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\06-arrow-south.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\06-magnify.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\09-arrow-west.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\11-clock.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\14-tag.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\19-gear.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\258-checkmark-grey.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\258-checkmark.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\259-list.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\28-star-grey.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\28-star-yellow.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\28-star.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\298-circlex-grey.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\298-circlex.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\64-zap-grey.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\64-zap-yellow.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\64-zap.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\70-tv.imageset\Contents.json" />
+    <BundleResource Include="Resources\Buttons\blank.imageset\Contents.json" />
+    <BundleResource Include="Resources\Flags\English.imageset\Contents.json" />
+    <BundleResource Include="Resources\Flags\Norwegian.imageset\Contents.json" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Contents.json" />
+    <BundleResource Include="Resources\Levels\advanced.imageset\Contents.json" />
+    <BundleResource Include="Resources\Levels\beginner-intermediate.imageset\Contents.json" />
+    <BundleResource Include="Resources\Levels\beginner.imageset\Contents.json" />
+    <BundleResource Include="Resources\Levels\intermediate-advanced.imageset\Contents.json" />
+    <BundleResource Include="Resources\Levels\intermediate.imageset\Contents.json" />
+    <ImageAsset Include="Resources/flatMap.xcassets/AppIcons.appiconset/Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources/flatMap.xcassets/LaunchImages.launchimage/Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources/Javazone.xcassets/AppIcons.appiconset/Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources/Javazone.xcassets/LaunchImages.launchimage/Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <InterfaceDefinition Include="Rating\Rating.storyboard" />
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\flatMap.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Application\flatMap\EMS-Config.plist" />
+    <Content Include="Application\flatMap\en.lproj\about.html" />
+    <Content Include="Application\flatMap\flatMap-Info.plist" />
+    <BundleResource Include="Resources\style.css" />
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-87.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-81.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-80.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-59.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-58.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-29.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-180.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-167.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-152.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-121.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Javazone.xcassets\AppIcons.appiconset\javazone-120.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ITunesArtwork Include="Application\flatMap\iTunesArtwork.png" />
+    <ITunesArtwork Include="Application\flatMap\iTunesArtwork%402x.png" />
+    <Content Include="Application\flatMap\nb.lproj\about.html" />
+    <Content Include="Application\JavaZone\en.lproj\about.html" />
+    <Content Include="Application\JavaZone\nb.lproj\about.html" />
+    <Content Include="Application\JavaZone\EMS-Config.plist" />
+    <ITunesArtwork Include="Application\JavaZone\iTunesArtwork.png" />
+    <ITunesArtwork Include="Application\JavaZone\iTunesArtwork%402x.png" />
+    <Content Include="Application\JavaZone\JavaZone-Info.plist" />
+    <Content Include="Config\EMS-Keys.sample.plist" />
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\Buttons\02-arrow-east.imageset\02-arrow-east.png" />
+    <BundleResource Include="Resources\Buttons\02-arrow-east.imageset\02-arrow-east%402x.png" />
+    <BundleResource Include="Resources\Buttons\03-arrow-north.imageset\03-arrow-north.png" />
+    <BundleResource Include="Resources\Buttons\03-arrow-north.imageset\03-arrow-north%402x.png" />
+    <BundleResource Include="Resources\Buttons\06-arrow-south.imageset\06-arrow-south.png" />
+    <BundleResource Include="Resources\Buttons\06-arrow-south.imageset\06-arrow-south%402x.png" />
+    <BundleResource Include="Resources\Buttons\06-magnify.imageset\06-magnify.png" />
+    <BundleResource Include="Resources\Buttons\06-magnify.imageset\06-magnify%402x.png" />
+    <BundleResource Include="Resources\Buttons\09-arrow-west.imageset\09-arrow-west.png" />
+    <BundleResource Include="Resources\Buttons\09-arrow-west.imageset\09-arrow-west%402x.png" />
+    <BundleResource Include="Resources\Buttons\11-clock.imageset\11-clock.png" />
+    <BundleResource Include="Resources\Buttons\11-clock.imageset\11-clock%402x.png" />
+    <BundleResource Include="Resources\Buttons\14-tag.imageset\14-tag.png" />
+    <BundleResource Include="Resources\Buttons\14-tag.imageset\14-tag%402x.png" />
+    <BundleResource Include="Resources\Buttons\19-gear.imageset\19-gear.png" />
+    <BundleResource Include="Resources\Buttons\19-gear.imageset\19-gear%402x.png" />
+    <BundleResource Include="Resources\Buttons\258-checkmark-grey.imageset\258-checkmark-grey.png" />
+    <BundleResource Include="Resources\Buttons\258-checkmark-grey.imageset\258-checkmark-grey%402x.png" />
+    <BundleResource Include="Resources\Buttons\258-checkmark.imageset\258-checkmark.png" />
+    <BundleResource Include="Resources\Buttons\258-checkmark.imageset\258-checkmark%402x.png" />
+    <BundleResource Include="Resources\Buttons\259-list.imageset\259-list.png" />
+    <BundleResource Include="Resources\Buttons\259-list.imageset\259-list%402x.png" />
+    <BundleResource Include="Resources\Buttons\28-star-grey.imageset\28-star-grey.png" />
+    <BundleResource Include="Resources\Buttons\28-star-grey.imageset\28-star-grey%402x.png" />
+    <BundleResource Include="Resources\Buttons\28-star-yellow.imageset\28-star-yellow.png" />
+    <BundleResource Include="Resources\Buttons\28-star-yellow.imageset\28-star-yellow%402x.png" />
+    <BundleResource Include="Resources\Buttons\28-star.imageset\28-star.png" />
+    <BundleResource Include="Resources\Buttons\28-star.imageset\28-star%402x.png" />
+    <BundleResource Include="Resources\Buttons\298-circlex-grey.imageset\298-circlex.png" />
+    <BundleResource Include="Resources\Buttons\298-circlex-grey.imageset\298-circlex%402x.png" />
+    <BundleResource Include="Resources\Buttons\298-circlex.imageset\298-circlex.png" />
+    <BundleResource Include="Resources\Buttons\298-circlex.imageset\298-circlex%402x.png" />
+    <BundleResource Include="Resources\Buttons\64-zap-grey.imageset\64-zap-grey.png" />
+    <BundleResource Include="Resources\Buttons\64-zap-grey.imageset\64-zap-grey%402x.png" />
+    <BundleResource Include="Resources\Buttons\64-zap-yellow.imageset\64-zap-yellow.png" />
+    <BundleResource Include="Resources\Buttons\64-zap-yellow.imageset\64-zap-yellow%402x.png" />
+    <BundleResource Include="Resources\Buttons\64-zap.imageset\64-zap.png" />
+    <BundleResource Include="Resources\Buttons\64-zap.imageset\64-zap%402x.png" />
+    <BundleResource Include="Resources\Buttons\70-tv.imageset\70-tv.png" />
+    <BundleResource Include="Resources\Buttons\70-tv.imageset\70-tv%402x.png" />
+    <BundleResource Include="Resources\Buttons\blank.imageset\blank.png" />
+    <BundleResource Include="Resources\Buttons\blank.imageset\blank%402x.png" />
+    <BundleResource Include="Resources\Flags\English.imageset\English.png" />
+    <BundleResource Include="Resources\Flags\Norwegian.imageset\Norwegian.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-120-iPhone.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-152-iPad.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-29-iPad.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-29-iPhone.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-40-iPad.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-58-iPad.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-58-iPhone.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-76-iPad.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-80-iPad.png" />
+    <BundleResource Include="Resources\flatMap.xcassets\AppIcons.appiconset\Icon-80-iPhone.png" />
+    <BundleResource Include="Resources\Levels\advanced.imageset\advanced-o.png" />
+    <BundleResource Include="Resources\Levels\advanced.imageset\advanced-o%402x.png" />
+    <BundleResource Include="Resources\Levels\beginner-intermediate.imageset\beginner-intermediate-o.png" />
+    <BundleResource Include="Resources\Levels\beginner-intermediate.imageset\beginner-intermediate-o%402x.png" />
+    <BundleResource Include="Resources\Levels\beginner.imageset\beginner-o.png" />
+    <BundleResource Include="Resources\Levels\beginner.imageset\beginner-o%402x.png" />
+    <BundleResource Include="Resources\Levels\intermediate-advanced.imageset\intermediate-advanced-o.png" />
+    <BundleResource Include="Resources\Levels\intermediate-advanced.imageset\intermediate-advanced-o%402x.png" />
+    <BundleResource Include="Resources\Levels\intermediate.imageset\intermediate-o.png" />
+    <BundleResource Include="Resources\Levels\intermediate.imageset\intermediate-o%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Utils\Notifications\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
